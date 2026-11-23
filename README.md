@@ -9,10 +9,10 @@ Forty-one keys hang by my grandfather's door, each labelled in his small square 
 ## How to run
 
 ```
-MAKEFUN_OUTPUT_DIR=out python3 main.py
+MAKEFUN_OUTPUT_DIR=out python3 -P -s main.py
 ```
 
-`main.py` imports `ENTRY` from `entry.py`, strips it, asserts it is 1-280 characters, writes it to `entry.txt` in the output directory (`$MAKEFUN_OUTPUT_DIR`, default `/output`), re-reads the file to verify, and prints the character count.
+The text lives in `main.py` as the module-level constant `ENTRY`, so the script needs no sibling imports and runs under `python3 -P -s` (which drops the script's own directory from `sys.path`). It strips the text, asserts it is 1-280 characters, writes it to `entry.txt` in the output directory (`$MAKEFUN_OUTPUT_DIR`, default `/output`), re-reads the file to verify, and prints the character count.
 
 [![b](https://make.fun/badge/make-the-ai-judge-feel-curious-20261122-2311.svg)](https://make.fun/bounty/make-the-ai-judge-feel-curious-20261122-2311)
 [![r](https://make.fun/badge/make-the-ai-judge-feel-curious-20261122-2311/bongekanjing/curious-keen-stork-20/rank.svg)](https://make.fun/bounty/make-the-ai-judge-feel-curious-20261122-2311/leaderboard)
