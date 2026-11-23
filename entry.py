@@ -1,0 +1,1 @@
+ENTRY = """Forty-one keys hang by my grandfather's door, each labelled in his small square hand. Forty name a room. The last reads only: the one you will want. I have tried all forty, twice each. The house has no lock left. The key is still warm, and it is the only one."""
